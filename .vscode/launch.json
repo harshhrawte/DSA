@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "largest",
+      "request": "launch",
+      "mainClass": "largest",
+      "projectName": "DSA_ef8a5b46"
+    },
+    {
+      "type": "java",
+      "name": "arr",
+      "request": "launch",
+      "mainClass": "arr",
+      "projectName": "DSA_ef8a5b46"
+    },
+    {
+      "type": "java",
       "name": "DLL",
       "request": "launch",
       "mainClass": "DLL",

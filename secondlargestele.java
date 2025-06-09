@@ -6,12 +6,12 @@ public class secondlargestele {
         moreoptimized(arr);
     }
 
+
 //brute
-    static int brute(int []nums)
-    { 
+    static int brute(int [] nums)
+    {
         int n=nums.length;
-        int second=-1;
-    
+        int secondlargest=-1;
         for(int i=0;i<n;i++)
         {
             for(int j=0;j<n-i-1;j++)
@@ -21,23 +21,21 @@ public class secondlargestele {
                 int temp=nums[j];
                 nums[j]=nums[j+1];
                 nums[j+1]=temp;
-               } 
+               }
             }
         }
-        int largest = nums[n-1]; 
+        int largest=nums[n-1];
         for(int i=n-2;i>0;i--)
         {
             if(nums[i]!=largest)
             {
-             second=nums[i];
-             break;
+                secondlargest=nums[i];
+                break;
             }
         }
-        System.out.println(second);
-         return second;
+         System.out.println(secondlargest);
+         return secondlargest;
     }
-
-
 
 
 
@@ -68,12 +66,9 @@ public class secondlargestele {
 
 
 
-
-
-
  
- //optimized
 
+ //optimized
  static int moreoptimized(int []numpy)
  {
    int largest=numpy[0];
@@ -81,11 +76,12 @@ public class secondlargestele {
    int n=numpy.length;
    for(int i=0;i<n;i++)
    {
-    if(numpy[i]>largest){
+    if(numpy[i]>largest)
+    {
      secondlargest=largest;
      largest=numpy[i];
     }
-    else if(numpy[i]<largest && secondlargest>numpy[i])
+    else if(numpy[i]<largest && secondlargest<numpy[i])
     {
 
      secondlargest=numpy[i];
