@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Q01_Setmatrix0",
+      "request": "launch",
+      "mainClass": "DSA191.Q01_Setmatrix0",
+      "projectName": "DSA_ef8a5b46"
+    },
+    {
+      "type": "java",
+      "name": "setmatrix0",
+      "request": "launch",
+      "mainClass": "setmatrix0",
+      "projectName": "DSA_ef8a5b46"
+    },
+    {
+      "type": "java",
       "name": "largest",
       "request": "launch",
       "mainClass": "largest",

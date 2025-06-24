@@ -21,12 +21,6 @@ public class hashing {
     //set.remove(number present in hashset)
     //same for arraylist also ha its not index but the no present in the hashset
   
-  
-  Iterator it=set.iterator();
-  while(it.hasNext())
-  {
-    System.out.println(it.next());
-  }
 
 
  }   

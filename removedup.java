@@ -2,7 +2,11 @@
 public class removedup {
     public static void main(String[] args) {
         int [] arr={1,1,1,1,12,45,67};
-        optimal(arr);
+        int s=optimal(arr);
+        for(int i=0;i<s;i++)
+        {
+           System.out.println(arr[i]);
+        }
 
     }
     static int optimal(int [] nums)
@@ -17,7 +21,7 @@ public class removedup {
                       j++;
                 }
             }
-            System.out.println(j);
+            System.out.println(nums);
             return j;
         }
 }
