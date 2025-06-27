@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Q02_PascalTriangle",
+      "request": "launch",
+      "mainClass": "DSA191.Q02_PascalTriangle",
+      "projectName": "DSA_ef8a5b46"
+    },
+    {
+      "type": "java",
       "name": "Q01_Setmatrix0",
       "request": "launch",
       "mainClass": "DSA191.Q01_Setmatrix0",

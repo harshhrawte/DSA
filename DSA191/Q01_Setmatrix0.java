@@ -1,7 +1,9 @@
 package DSA191;
 public class Q01_Setmatrix0 {
     public static void main(String[] args) {
-        int [][] arr = {{ 1,0,0} ,{1,0,1},{1,1,0}};
+        int [][] arr = {{ 1,0,0} 
+        ,{1,0,1},
+        {1,1,0}};
         System.out.println("Array before set matrix 0");
         for(int i=0;i<arr.length;i++)
         {
@@ -13,7 +15,7 @@ public class Q01_Setmatrix0 {
         }
 
         brute(arr);
-        System.out.println("Array after set matrix 0 brute");
+        System.out.println("Array after set matrix 0 brute approach :");
           for(int i=0;i<arr.length;i++)
         {
          for(int j=0;j<arr[0].length;j++)
@@ -24,7 +26,7 @@ public class Q01_Setmatrix0 {
         }
 
         optimized(arr);
-          System.out.println("Array after set matrix 0 optimized");
+          System.out.println("Array after set matrix 0 optimized approach:");
           for(int i=0;i<arr.length;i++)
         {
          for(int j=0;j<arr[0].length;j++)
@@ -55,6 +57,7 @@ static void brute(int [] [] nums)
           }
         }
     }
+
     for(int i=0;i<n;i++)
     {
         for(int j=0;j<m;j++)
@@ -68,6 +71,7 @@ static void brute(int [] [] nums)
 }
 
 
+
 //optimized
 static void optimized(int [] [] nums)
 {
@@ -75,7 +79,6 @@ static void optimized(int [] [] nums)
    boolean firstcol=false;
    int n=nums.length;
    int m=nums[0].length;
-
 
    //row
    for(int j=0;j<m;j++)
@@ -85,7 +88,6 @@ static void optimized(int [] [] nums)
         firstrow=true;
      }
    }
-
 
    //column
    for(int i=0;i<n;i++)
@@ -122,7 +124,6 @@ static void optimized(int [] [] nums)
     }
    }
 
-
    //firstrow
    if(firstrow)
    {
@@ -131,7 +132,6 @@ static void optimized(int [] [] nums)
         nums[0][j]=0;
     }
    }
-
 
    //firstcolumn
     if(firstcol)
@@ -143,4 +143,7 @@ static void optimized(int [] [] nums)
    }
 }
 }
+
+
+
 
