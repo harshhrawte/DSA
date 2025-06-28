@@ -6,26 +6,40 @@ public static void main(String[] args) {
     for(int i=0;i<nums.length;i++)
     { 
        System.out.println(nums[i]);
-        }       
-}
-
-//brute
-static int brute(int [] nums)
-{
-    int result=0;
-
-    return result;
+     }
+     System.out.println();     
+      
+    optimized(nums);
+    System.out.println("The next permutation :");
+     for(int i=0;i<nums.length;i++)
+    { 
+       System.out.println(nums[i]);
+     }
+     System.out.println();  
 }
 
 //optimized
-static int optimized(int [] nums)
+static void optimized(int [] nums)
 {
-    int result=0;
-
-    return result;
+   int n=nums.length;
+   int i=n-2;
+   while(i>=0 && nums[i]>=nums[i+1])
+    i--;
+   if(i>=0)
+   {
+    int j=n-1;
+    while(nums[j]<=nums[i])
+    {
+        j--;
+    }
+    int temp=nums[i];
+    nums[i]=nums[j];
+    nums[j]=temp;
+   }
+  reverse(nums,i+1,n-1);
 }
 
-private void reverse(int [] nums,int start,int end)
+static void reverse(int [] nums,int start,int end)
 {
     while(start<end)
     {
