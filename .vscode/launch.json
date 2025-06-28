@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Q03_nextpermutation",
+      "request": "launch",
+      "mainClass": "DSA191.Q03_nextpermutation",
+      "projectName": "DSA_ef8a5b46"
+    },
+    {
+      "type": "java",
       "name": "Q02_PascalTriangle",
       "request": "launch",
       "mainClass": "DSA191.Q02_PascalTriangle",
