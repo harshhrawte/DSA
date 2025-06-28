@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Q06_buysellstocks",
+      "request": "launch",
+      "mainClass": "DSA191.Q06_buysellstocks",
+      "projectName": "DSA_ef8a5b46"
+    },
+    {
+      "type": "java",
+      "name": "Q05_sortcolors",
+      "request": "launch",
+      "mainClass": "DSA191.Q05_sortcolors",
+      "projectName": "DSA_ef8a5b46"
+    },
+    {
+      "type": "java",
       "name": "Q04_kadanealgo",
       "request": "launch",
       "mainClass": "DSA191.Q04_kadanealgo",
